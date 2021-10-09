@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.obit-controls-gizmo {
+	position: absolute;
+	top: 2em;
+	right: 2em;
+	z-index: 1000;
+	background-color: #fff0;
+	border-radius: 100%;
+	transition: background-color 0.15s linear;
+	cursor: pointer;
+}
+
+.obit-controls-gizmo.dragging,
+.obit-controls-gizmo:hover {
+	background-color: #fff3;
+}
+
+.obit-controls-gizmo.inactive {
+	pointer-events: none;
+	background-color: #fff0 !important;
+}
